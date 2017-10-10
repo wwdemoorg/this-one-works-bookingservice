@@ -1,7 +1,7 @@
 FROM websphere-liberty:beta
-COPY server.xml /config/server.xml
+COPY src/main/liberty/config/server.xml /config/server.xml
 RUN installUtility install  --acceptLicense defaultServer
-COPY jvm.options /config/jvm.options
+COPY src/main/liberty/config/jvm.options /config/jvm.options
 COPY target/bookingservice-java-2.0.0-SNAPSHOT.war /config/apps/
 
 ENV MONGO_HOST=booking-db

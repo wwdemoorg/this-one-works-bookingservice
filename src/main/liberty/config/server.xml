@@ -18,7 +18,7 @@
   <quickStartSecurity userName="${env.USERNAME}" userPassword="${env.PASSWORD}"/>
 
   <webApplication name="bookingservice"
-        location="bookingservice-java-2.0.0-SNAPSHOT.war"
+        location="bookingservice-java-1.0.0-SNAPSHOT.war"
         contextRoot="/" />   
   <webContainer deferServletLoad="false"/>
 </server>
